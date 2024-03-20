@@ -1,17 +1,63 @@
 ---
-import NavBar from './NavBar.astro'
+
 ---
-	<header class="top-box" id="header">
-		<NavBar />
+	<header class="header">
+    <a href="#" class="logo">Astroy</a>
+
+    <nav class="navbar">
+      <a href="#">Browse</a>
+      <a href="#">Create</a>
+      <a href="#">Support</a>
+
+      <a href="#" class="btn-login">Sign In</a>
+    </nav>
+
 	</header>
 
 <style>
-  .top-box {
-      width: 100%; /* Makes the box full width */
-      height: 64px; /* Sets the height to 64 pixels */
-      background-color: #f0f0f0; /* Example background color */
-      position: fixed; /* Keeps the box at the top of the page */
-      top: 0; /* Aligns the box to the top */
-      left: 0; /* Aligns the box to the left */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    padding: 0px 24px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    width:auto;
+    height: 20px;
+    text-decoration: none;
+    margin: 0px, 32px, 0px, 0px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;;
+    text-decoration: none;
+    height: 64px;
+    padding: 2px 16px;
+  }
+
+  .btn-login {
+    background: rgb(59, 130, 206);
+    color: ;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 0;
+
   }
 </style>
